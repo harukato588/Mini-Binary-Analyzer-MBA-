@@ -2,6 +2,10 @@
 
 Mini Binary Analyzer adalah alat command-line berbasis Python untuk melihat informasi dasar file dan menganalisis beberapa struktur file ELF. Hasil ditampilkan sebagai tabel di terminal menggunakan [Rich](https://github.com/Textualize/rich).
 
+## Status Project
+
+Project ini masih dalam tahap pengembangan aktif. Fitur, opsi command-line, dan cara penggunaan dapat berubah seiring penambahan fitur dan perbaikan. README ini akan diperbarui agar sesuai dengan kemampuan project saat ini.
+
 ## Fitur
 
 - Mendeteksi format berdasarkan magic bytes: ELF, PE, PNG, dan PDF.
@@ -102,13 +106,20 @@ Untuk melihat opsi CLI:
 ```bash
 python main.py --help
 ```
-
 ## Catatan
 
 - Opsi analisis hanya dapat dipilih satu per perintah, kecuali `--all`.
 - Ekstraksi string saat ini hanya mencari karakter ASCII yang dapat dicetak, dengan panjang minimum 4 karakter.
 - Modul pemeriksaan keamanan (`security_analyzer.py`) tersedia di source code, tetapi belum terhubung ke CLI.
 - Dependency di `requirements.txt` dipasang sekaligus menggunakan `pip install -r requirements.txt`.
+
+
+## Catatan lagi 
+project ini juga masih dalam masa pengembangan jadi masih akan ada update fitur yang akan datang mulai dari:
+-  menganalasisis secara static hingga dynamic 
+- melakukan patching dalam binary 
+- hingga bisa menganalisa beberapa kerentanan dalam sebuah softwre hingga memory coruption 
+
 
 ## Lisensi
 
