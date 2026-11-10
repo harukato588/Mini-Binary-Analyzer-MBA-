@@ -1,0 +1,4 @@
+PySide6
+pyelftools
+pefile
+rich
